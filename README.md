@@ -40,7 +40,7 @@ Set Environment Variables: Ensure your serverless.yml has the following:
 
 YAML
 environment:
-  ATS_BASE_URL: https://your-endpoint.beeceptor.com
+  ATS_BASE_URL: https://app.beeceptor.com/console/muskan-ats-service
   ATS_API_KEY: your-static-token
 Start the Service:
 
@@ -63,6 +63,7 @@ Endpoint: /candidates
 
 PowerShell
 Invoke-RestMethod -Uri "http://localhost:3000/dev/candidates" -Method Post -Body '{"name": "Rahul Sharma", "email": "rahul@example.com", "phone": "9988776655", "resume_url": "https://link.com/cv.pdf", "job_id": "102"}' -ContentType "application/json"
+
 C. Get Applications for a Job
 Method: GET
 
