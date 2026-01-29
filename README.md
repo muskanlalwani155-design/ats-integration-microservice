@@ -67,7 +67,7 @@ Invoke-RestMethod -Uri "http://localhost:3000/dev/candidates" -Method Post -Body
 C. Get Applications for a Job
 Method: GET
 
-Endpoint: /applications?job_id=101
+Endpoint: http://localhost:3000/dev/applications?job_id=101
 
 Bash
-curl http://localhost:3000/dev/applications?job_id=101
+curl http://localhost:3000/dev/applications/job/id101
